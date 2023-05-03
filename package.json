@@ -1,0 +1,6 @@
+{
+  "name": "node-yuf6js",
+  "dependencies": {
+    "@angular/cli": "^15.2.7"
+  }
+}
