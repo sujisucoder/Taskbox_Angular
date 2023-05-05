@@ -350,7 +350,7 @@
         },
         {
             "name": "TaskComponent",
-            "id": "component-TaskComponent-1539c1e355edcbe373ad7511076454a2b7289a7230075aadaf86653e0b6e457930fa0e8b849ae71c9f6714bfe7e23f3df261656673ab8f58c8377517b43b3942",
+            "id": "component-TaskComponent-aa4e6686695d83d67763ea27d523a4a5d4d989899b1b4126f8aba5ae5671ed0a9f9831a7c42bfbc15b9419304ce325172d855c46a0a2f114a0f2c1b803b09276",
             "file": "src/app/components/task.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -360,7 +360,7 @@
             "selector": "app-task",
             "styleUrls": [],
             "styles": [],
-            "template": "         <markdown\n      mermaid\n      ngPreserveWhitespaces >\n<pre class=\"mermaid\">\n\n</pre>\n\n</markdown>\n",
+            "template": "         <markdown\n      mermaid\n      ngPreserveWhitespaces >\n<pre class=\"mermaid\">\ngraph TD;\nid1([1. Started with google searching for stackblitz.com]) -->  id2([2.Selected a blank Nodejs project ])\nid2-->  id3([3.imported  a Blank repository which was created already])\nid3 -->id4([4. In cmd type ng new Taskbox_WithoutStore])\nid4([4. In cmd type ng new Taskbox_WithoutStore])-->id5([5.Created a new Branch 'StorybookInstall' using \"git branch StorybookInstall\"])\n\n</pre>\n\n</markdown>\n",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [
@@ -368,7 +368,7 @@
                     "name": "task",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 18,
+                    "line": 23,
                     "type": "any",
                     "decorators": []
                 }
@@ -379,7 +379,7 @@
                     "defaultValue": "new EventEmitter<Event>()",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 26,
+                    "line": 31,
                     "type": "EventEmitter"
                 },
                 {
@@ -387,7 +387,7 @@
                     "defaultValue": "new EventEmitter<Event>()",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 22,
+                    "line": 27,
                     "type": "EventEmitter"
                 }
             ],
@@ -400,65 +400,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-task',\r\n  template: `\r\n         <markdown \r\n      mermaid\r\n      ngPreserveWhitespaces >\r\n<pre class=\"mermaid\">\r\n\r\n</pre>\r\n\r\n</markdown>\r\n  `,\r\n})\r\nexport class TaskComponent {\r\n  @Input() task: any;\r\n\r\n  // tslint:disable-next-line: no-output-on-prefix\r\n  @Output()\r\n  onPinTask = new EventEmitter<Event>();\r\n\r\n  // tslint:disable-next-line: no-output-on-prefix\r\n  @Output()\r\n  onArchiveTask = new EventEmitter<Event>();\r\n}",
-            "assetsDirs": [],
-            "styleUrlsData": "",
-            "stylesData": ""
-        },
-        {
-            "name": "TaskDetailComponent",
-            "id": "component-TaskDetailComponent-24958c7e5ec25be7cd19819bccb1f54879dbe77c5467818765d7d8cee96b4ace404c3e55cc3211f3be0105e080742b44d31ae507eeca8b3798150e2f3e56152c",
-            "file": "src/app/components/task-details.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "app-task-details",
-            "styleUrls": [],
-            "styles": [],
-            "template": "\n",
-            "templateUrl": [],
-            "viewProviders": [],
-            "inputsClass": [
-                {
-                    "name": "task",
-                    "defaultValue": "{ title: 'sojem', state: '', id: '' }",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 12,
-                    "type": "any",
-                    "decorators": []
-                }
-            ],
-            "outputsClass": [
-                {
-                    "name": "onArchiveTask",
-                    "defaultValue": "new EventEmitter<Event>()",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 20,
-                    "type": "EventEmitter"
-                },
-                {
-                    "name": "onPinTask",
-                    "defaultValue": "new EventEmitter<Event>()",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 16,
-                    "type": "EventEmitter"
-                }
-            ],
-            "propertiesClass": [],
-            "methodsClass": [],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-task-details',\r\n  template: `\r\n\r\n  `\r\n})\r\nexport class TaskDetailComponent {\r\n  @Input()\r\n  task?: any = { title: 'sojem', state: '', id: '' };\r\n\r\n  // tslint:disable-next-line: no-output-on-prefix\r\n  @Output()\r\n  onPinTask = new EventEmitter<Event>();\r\n\r\n  // tslint:disable-next-line: no-output-on-prefix\r\n  @Output()\r\n  onArchiveTask = new EventEmitter<Event>();\r\n}\r\n",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-task',\r\n  template: `\r\n         <markdown \r\n      mermaid\r\n      ngPreserveWhitespaces >\r\n<pre class=\"mermaid\">\r\ngraph TD;\r\nid1([1. Started with google searching for stackblitz.com]) -->  id2([2.Selected a blank Nodejs project ])\r\nid2-->  id3([3.imported  a Blank repository which was created already])\r\nid3 -->id4([4. In cmd type ng new Taskbox_WithoutStore])\r\nid4([4. In cmd type ng new Taskbox_WithoutStore])-->id5([5.Created a new Branch 'StorybookInstall' using \"git branch StorybookInstall\"])\r\n\r\n</pre>\r\n\r\n</markdown>\r\n  `,\r\n})\r\nexport class TaskComponent {\r\n  @Input() task: any;\r\n\r\n  // tslint:disable-next-line: no-output-on-prefix\r\n  @Output()\r\n  onPinTask = new EventEmitter<Event>();\r\n\r\n  // tslint:disable-next-line: no-output-on-prefix\r\n  @Output()\r\n  onArchiveTask = new EventEmitter<Event>();\r\n}",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": ""
@@ -467,13 +409,13 @@
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-1255530f43601e4965d7343df967abf02db1ca72dd6b14bf6f3a488105b58b61fe21ee62c4b4977a9e6231d1c0f6dae0c59de49451b0368e139f731fda762229",
+            "id": "module-AppModule-8907523e2e175cf36b45bb04950f2524f585bfd35edb247f30629f219daf9723f50f6a91b23f9798941eccac91b2b68f623a071ec44a66fd9140f3925badd526",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { MarkdownModule, MarkdownService } from 'ngx-markdown';\r\nimport { HttpClient } from '@angular/common/http';\r\nimport { HttpClientModule } from '@angular/common/http';\r\n\r\nimport { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppRoutingModule } from './app-routing.module';\r\nimport { AppComponent } from './app.component';\r\nimport { TaskComponent } from './components/task.component';\r\nimport {TaskDetailComponent}  from './components/task-details.component';\r\n\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent,\r\n    TaskComponent,\r\n    TaskDetailComponent\r\n  ],\r\n  exports: [TaskDetailComponent],\r\n  imports: [\r\n    BrowserModule,\r\n    AppRoutingModule,\r\n    HttpClientModule,\r\n    MarkdownModule.forRoot({ loader: HttpClient }),\r\n\r\n    \r\n  ],\r\n\r\n  bootstrap: [AppComponent]\r\n})\r\nexport class AppModule { }\r\n",
+            "sourceCode": "import { MarkdownModule, MarkdownService } from 'ngx-markdown';\r\nimport { HttpClient } from '@angular/common/http';\r\nimport { HttpClientModule } from '@angular/common/http';\r\n\r\nimport { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppRoutingModule } from './app-routing.module';\r\nimport { AppComponent } from './app.component';\r\nimport { TaskComponent } from './components/task.component';\r\n\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent,\r\n    TaskComponent,\r\n  ],\r\n  exports: [],\r\n  imports: [\r\n    BrowserModule,\r\n    AppRoutingModule,\r\n    HttpClientModule,\r\n    MarkdownModule.forRoot({ loader: HttpClient }),\r\n\r\n    \r\n  ],\r\n\r\n  bootstrap: [AppComponent]\r\n})\r\nexport class AppModule { }\r\n",
             "children": [
                 {
                     "type": "providers",
@@ -487,9 +429,6 @@
                         },
                         {
                             "name": "TaskComponent"
-                        },
-                        {
-                            "name": "TaskDetailComponent"
                         }
                     ]
                 },
@@ -503,11 +442,7 @@
                 },
                 {
                     "type": "exports",
-                    "elements": [
-                        {
-                            "name": "TaskDetailComponent"
-                        }
-                    ]
+                    "elements": []
                 },
                 {
                     "type": "bootstrap",
@@ -573,16 +508,6 @@
                 "defaultValue": "{\r\n    onPinTask: action('onPinTask'),\r\n    onArchiveTask: action('onArchiveTask'),\r\n  }"
             },
             {
-                "name": "actionsData",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/taskDetail.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\r\n  onPinTask: action('onPinTask'),\r\n  onArchiveTask: action('onArchiveTask'),\r\n}"
-            },
-            {
                 "name": "Archived",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -601,16 +526,6 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\r\n    args : {\r\n      task: {\r\n        id: '1',\r\n        title: 'Test Task',\r\n        state: 'TASK_INBOX',\r\n      },\r\n    }\r\n  }"
-            },
-            {
-                "name": "DefaultTask",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/taskDetail.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "StoryDetail",
-                "defaultValue": "{\r\n  render: () => ({\r\n    props: {\r\n      task: {\r\n        id: '1',\r\n        title: 'Test Task',\r\n        state: 'TASK_INBOX',\r\n      },\r\n      onPinTask: actionsData.onPinTask,\r\n      onArchiveTask: actionsData.onArchiveTask,\r\n    },\r\n  }),\r\n}"
             },
             {
                 "name": "Large",
@@ -700,17 +615,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<TaskComponent>",
-                "defaultValue": "{\r\n    /* 👇 The title prop is optional.\r\n     * See https://storybook.js.org/docs/angular/configure/overview#configure-story-loading\r\n     * to learn how to generate automatic titles\r\n     */\r\n    title: 'TaskComponent',\r\n    component: TaskComponent,\r\n    decorators: [\r\n      moduleMetadata({\r\n        declarations: [TaskComponent],\r\n        imports: [\r\n          HttpClientModule,\r\n      MarkdownModule.forRoot({ loader: HttpClient }),\r\n  \r\n        ]\r\n         })\r\n    ]\r\n    \r\n  }"
-            },
-            {
-                "name": "metaDetail",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/taskDetail.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<TaskDetailComponent>",
-                "defaultValue": "{\r\n  /* 👇 The title prop is optional.\r\n   * See https://storybook.js.org/docs/angular/configure/overview#configure-story-loading\r\n   * to learn how to generate automatic titles\r\n   */\r\n  title: 'TaskDetailComponent',\r\n  component: TaskDetailComponent,\r\n  \r\n\r\n  decorators: [\r\n    moduleMetadata({\r\n      declarations: [TaskDetailComponent],\r\n      imports: [\r\n        HttpClientModule,\r\n    MarkdownModule.forRoot({ loader: HttpClient }),\r\n\r\n      ]\r\n       })\r\n  ]\r\n\r\n}"
+                "defaultValue": "{\r\n    /* 👇 The title prop is optional.\r\n     * See https://storybook.js.org/docs/angular/configure/overview#configure-story-loading\r\n     * to learn how to generate automatic titles\r\n     */\r\n    title: 'TaskBox/TaskComponent',\r\n    component: TaskComponent,\r\n    decorators: [\r\n      moduleMetadata({\r\n        declarations: [TaskComponent],\r\n        imports: [\r\n          HttpClientModule,\r\n      MarkdownModule.forRoot({ loader: HttpClient }),\r\n  \r\n        ]\r\n         })\r\n    ]\r\n    \r\n  }"
             },
             {
                 "name": "Pinned",
@@ -720,7 +625,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n    args : {  \r\n      task:\r\n        {\r\n          ...Default.args?.task,\r\n          state: 'TASK_PINNED'\r\n        }\r\n\r\n      \r\n\r\n    }\r\n  }"
+                "defaultValue": "{\r\n    args : {  \r\n      task:\r\n        {\r\n          id: '2',\r\n          title: 'Test Task',\r\n          state: 'TASK_INBOX',\r\n        }\r\n\r\n      \r\n\r\n    }\r\n  }"
             },
             {
                 "name": "preview",
@@ -808,17 +713,6 @@
                 "deprecationMessage": "",
                 "description": "",
                 "kind": 177
-            },
-            {
-                "name": "StoryDetail",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<TaskDetailComponent>",
-                "file": "src/app/components/taskDetail.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 177
             }
         ],
         "enumerations": [],
@@ -862,7 +756,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<TaskComponent>",
-                    "defaultValue": "{\r\n    /* 👇 The title prop is optional.\r\n     * See https://storybook.js.org/docs/angular/configure/overview#configure-story-loading\r\n     * to learn how to generate automatic titles\r\n     */\r\n    title: 'TaskComponent',\r\n    component: TaskComponent,\r\n    decorators: [\r\n      moduleMetadata({\r\n        declarations: [TaskComponent],\r\n        imports: [\r\n          HttpClientModule,\r\n      MarkdownModule.forRoot({ loader: HttpClient }),\r\n  \r\n        ]\r\n         })\r\n    ]\r\n    \r\n  }"
+                    "defaultValue": "{\r\n    /* 👇 The title prop is optional.\r\n     * See https://storybook.js.org/docs/angular/configure/overview#configure-story-loading\r\n     * to learn how to generate automatic titles\r\n     */\r\n    title: 'TaskBox/TaskComponent',\r\n    component: TaskComponent,\r\n    decorators: [\r\n      moduleMetadata({\r\n        declarations: [TaskComponent],\r\n        imports: [\r\n          HttpClientModule,\r\n      MarkdownModule.forRoot({ loader: HttpClient }),\r\n  \r\n        ]\r\n         })\r\n    ]\r\n    \r\n  }"
                 },
                 {
                     "name": "Pinned",
@@ -872,39 +766,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n    args : {  \r\n      task:\r\n        {\r\n          ...Default.args?.task,\r\n          state: 'TASK_PINNED'\r\n        }\r\n\r\n      \r\n\r\n    }\r\n  }"
-                }
-            ],
-            "src/app/components/taskDetail.stories.ts": [
-                {
-                    "name": "actionsData",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/taskDetail.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\r\n  onPinTask: action('onPinTask'),\r\n  onArchiveTask: action('onArchiveTask'),\r\n}"
-                },
-                {
-                    "name": "DefaultTask",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/taskDetail.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "StoryDetail",
-                    "defaultValue": "{\r\n  render: () => ({\r\n    props: {\r\n      task: {\r\n        id: '1',\r\n        title: 'Test Task',\r\n        state: 'TASK_INBOX',\r\n      },\r\n      onPinTask: actionsData.onPinTask,\r\n      onArchiveTask: actionsData.onArchiveTask,\r\n    },\r\n  }),\r\n}"
-                },
-                {
-                    "name": "metaDetail",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/taskDetail.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<TaskDetailComponent>",
-                    "defaultValue": "{\r\n  /* 👇 The title prop is optional.\r\n   * See https://storybook.js.org/docs/angular/configure/overview#configure-story-loading\r\n   * to learn how to generate automatic titles\r\n   */\r\n  title: 'TaskDetailComponent',\r\n  component: TaskDetailComponent,\r\n  \r\n\r\n  decorators: [\r\n    moduleMetadata({\r\n      declarations: [TaskDetailComponent],\r\n      imports: [\r\n        HttpClientModule,\r\n    MarkdownModule.forRoot({ loader: HttpClient }),\r\n\r\n      ]\r\n       })\r\n  ]\r\n\r\n}"
+                    "defaultValue": "{\r\n    args : {  \r\n      task:\r\n        {\r\n          id: '2',\r\n          title: 'Test Task',\r\n          state: 'TASK_INBOX',\r\n        }\r\n\r\n      \r\n\r\n    }\r\n  }"
                 }
             ],
             "src/stories/Button.stories.ts": [
@@ -1090,19 +952,6 @@
                     "description": "",
                     "kind": 177
                 }
-            ],
-            "src/app/components/taskDetail.stories.ts": [
-                {
-                    "name": "StoryDetail",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<TaskDetailComponent>",
-                    "file": "src/app/components/taskDetail.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 177
-                }
             ]
         }
     },
@@ -1141,15 +990,6 @@
                 "name": "AppComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/task-details.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "TaskDetailComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/4",
                 "status": "low"
             },
             {
@@ -1207,36 +1047,6 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Pinned",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/taskDetail.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "actionsData",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/taskDetail.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "DefaultTask",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/taskDetail.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "metaDetail",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

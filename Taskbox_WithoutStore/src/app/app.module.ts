@@ -8,16 +8,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TaskComponent } from './components/task.component';
-import {TaskDetailComponent}  from './components/task-details.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TaskComponent,
-    TaskDetailComponent
   ],
-  exports: [TaskDetailComponent],
+  exports: [],
   imports: [
     BrowserModule,
     AppRoutingModule,

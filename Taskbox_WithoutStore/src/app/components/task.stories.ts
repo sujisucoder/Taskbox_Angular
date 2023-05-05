@@ -16,7 +16,7 @@ const meta: Meta<TaskComponent> = {
      * See https://storybook.js.org/docs/angular/configure/overview#configure-story-loading
      * to learn how to generate automatic titles
      */
-    title: 'TaskComponent',
+    title: 'TaskBox/TaskComponent',
     component: TaskComponent,
     decorators: [
       moduleMetadata({
@@ -54,8 +54,9 @@ const meta: Meta<TaskComponent> = {
     args : {  
       task:
         {
-          ...Default.args?.task,
-          state: 'TASK_PINNED'
+          id: '2',
+          title: 'Test Task',
+          state: 'TASK_INBOX',
         }
 
       

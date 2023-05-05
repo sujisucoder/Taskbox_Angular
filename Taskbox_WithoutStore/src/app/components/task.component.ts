@@ -12,10 +12,9 @@ graph TD;
 id1([1. Started with google searching for stackblitz.com]) -->  id2([2.Selected a blank Nodejs project ])
 id2-->  id3([3.imported  a Blank repository which was created already])
 id3 -->id4([4. In cmd type ng new Taskbox_WithoutStore])
-id4 --> id5([hkjhkjh])
-
-
-
+id4([4. In cmd type ng new Taskbox_WithoutStore])--> id5([Created a new Branch StorybookInstall using git branch StorybookInstall])
+id5 --> id6([Installing Storybook using npx storybooklatest init on Stackblitz terminal was failed so I created a clone on my local computer and Successfully installed Storybook through powershell.story was available on port localhost:6060 ])
+id6 --> id7([ljjhjjjjhj])
 
 </pre>
 
