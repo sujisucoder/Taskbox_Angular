@@ -6,9 +6,12 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
   ],
+
   framework: {
     name: "@storybook/angular",
-    options: {},
+    options: {
+  
+    },
   },
   docs: {
     autodocs: "tag",

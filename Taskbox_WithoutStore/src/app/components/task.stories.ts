@@ -12,10 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 const meta: Meta<TaskComponent> = {
-    /* 👇 The title prop is optional.
-     * See https://storybook.js.org/docs/angular/configure/overview#configure-story-loading
-     * to learn how to generate automatic titles
-     */
+
     title: 'TaskBox/TaskComponent',
     component: TaskComponent,
     decorators: [
@@ -41,13 +38,7 @@ const meta: Meta<TaskComponent> = {
   type Story = StoryObj<TaskComponent>;
 
   export const Default: Story = {
-    args : {
-      task: {
-        id: '1',
-        title: 'Test Task',
-        state: 'TASK_INBOX',
-      },
-    }
+
   };
 
   export const Pinned: Story = {
@@ -65,17 +56,7 @@ const meta: Meta<TaskComponent> = {
   };
   
   export const Archived: Story = {
-    args : {
 
-      task:
-        {
-          ...Default.args?.task,
-          state: 'TASK_ARCHIVED'
-        }
-
-      
-      
-    }
   };
   
 

@@ -269,6 +269,39 @@
             "stylesData": ""
         },
         {
+            "name": "IntroComponent",
+            "id": "component-IntroComponent-182db98b311cc3f964d23d0c045948b8da28a2bb68649bac2788b10f9d8719f4cba9e70d2f8139685a59e09e0a927a1389dca6ab95a55dc7b766faddf5ea4ffc",
+            "file": "src/app/components/intro.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "intro-app",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./intro.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'intro-app',\r\n  templateUrl: './intro.component.html',\r\n    \r\n})\r\nexport class IntroComponent {\r\n\r\n}",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "templateData": "<markdown \r\nmermaid\r\nngPreserveWhitespaces >\r\n<pre class=\"mermaid\"> \r\n\r\n\r\n    graph TD;\r\n    id1([1.Select an editor])-->id2([stackblitz]);\r\n    id1-->id3([vs code ]);\r\n    id3-->id4\r\n    id2-->id4([Select a blank Nodejs project]);\r\n    id4-->id5([import  a Blank repository ])\r\n    id5-->id6([\"Run, npm install  @angular/cli\"])\r\n    id6-->id7([\"Run, ng new project-name\"])\r\n    id7-->id8([\"Installing Storybook using npx storybook@latest init \"])\r\n    \r\n\r\n\r\n</pre> \r\n\r\n</markdown>"
+        },
+        {
             "name": "PageComponent",
             "id": "component-PageComponent-5ecfe30021e090c1066750dbad5d025807d7b26df4e7a0f6a17b02bc8e0943f9a6995089e78890a1e85f47cbb29500d6c2f851dca1d13b2f31715a288149e25a",
             "file": "src/stories/page.component.ts",
@@ -350,7 +383,7 @@
         },
         {
             "name": "TaskComponent",
-            "id": "component-TaskComponent-aa4e6686695d83d67763ea27d523a4a5d4d989899b1b4126f8aba5ae5671ed0a9f9831a7c42bfbc15b9419304ce325172d855c46a0a2f114a0f2c1b803b09276",
+            "id": "component-TaskComponent-c3bb095ba7e8d1bf8e4606451357fddfaa05aea49a1d8b406b1b393886e7be155af94845986436baea2e25bfafdd5187b175dfe8f56582162de2d5310cb63b65",
             "file": "src/app/components/task.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -360,15 +393,16 @@
             "selector": "app-task",
             "styleUrls": [],
             "styles": [],
-            "template": "         <markdown\n      mermaid\n      ngPreserveWhitespaces >\n<pre class=\"mermaid\">\ngraph TD;\nid1([1. Started with google searching for stackblitz.com]) -->  id2([2.Selected a blank Nodejs project ])\nid2-->  id3([3.imported  a Blank repository which was created already])\nid3 -->id4([4. In cmd type ng new Taskbox_WithoutStore])\nid4([4. In cmd type ng new Taskbox_WithoutStore])-->id5([5.Created a new Branch 'StorybookInstall' using \"git branch StorybookInstall\"])\n\n</pre>\n\n</markdown>\n",
-            "templateUrl": [],
+            "templateUrl": [
+                "./task.component.html"
+            ],
             "viewProviders": [],
             "inputsClass": [
                 {
                     "name": "task",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 23,
+                    "line": 9,
                     "type": "any",
                     "decorators": []
                 }
@@ -379,7 +413,7 @@
                     "defaultValue": "new EventEmitter<Event>()",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 31,
+                    "line": 17,
                     "type": "EventEmitter"
                 },
                 {
@@ -387,7 +421,7 @@
                     "defaultValue": "new EventEmitter<Event>()",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 27,
+                    "line": 13,
                     "type": "EventEmitter"
                 }
             ],
@@ -400,22 +434,23 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-task',\r\n  template: `\r\n         <markdown \r\n      mermaid\r\n      ngPreserveWhitespaces >\r\n<pre class=\"mermaid\">\r\ngraph TD;\r\nid1([1. Started with google searching for stackblitz.com]) -->  id2([2.Selected a blank Nodejs project ])\r\nid2-->  id3([3.imported  a Blank repository which was created already])\r\nid3 -->id4([4. In cmd type ng new Taskbox_WithoutStore])\r\nid4([4. In cmd type ng new Taskbox_WithoutStore])-->id5([5.Created a new Branch 'StorybookInstall' using \"git branch StorybookInstall\"])\r\n\r\n</pre>\r\n\r\n</markdown>\r\n  `,\r\n})\r\nexport class TaskComponent {\r\n  @Input() task: any;\r\n\r\n  // tslint:disable-next-line: no-output-on-prefix\r\n  @Output()\r\n  onPinTask = new EventEmitter<Event>();\r\n\r\n  // tslint:disable-next-line: no-output-on-prefix\r\n  @Output()\r\n  onArchiveTask = new EventEmitter<Event>();\r\n}",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-task',\r\n  templateUrl: './task.component.html', \r\n})\r\nexport class TaskComponent {\r\n  @Input() task: any;\r\n\r\n  // tslint:disable-next-line: no-output-on-prefix\r\n  @Output()\r\n  onPinTask = new EventEmitter<Event>();\r\n\r\n  // tslint:disable-next-line: no-output-on-prefix\r\n  @Output()\r\n  onArchiveTask = new EventEmitter<Event>();\r\n}",
             "assetsDirs": [],
             "styleUrlsData": "",
-            "stylesData": ""
+            "stylesData": "",
+            "templateData": "<div class=\"list-item {{ task?.state }}\">\r\n    <label\r\n      [attr.aria-label]=\"'archiveTask-' + task.id\"\r\n      for=\"checked-{{ task?.id }}\"\r\n      class=\"checkbox\"\r\n    >\r\n      <input\r\n        type=\"checkbox\"\r\n        disabled=\"true\"\r\n        [defaultChecked]=\"task?.state === 'TASK_ARCHIVED'\"\r\n        name=\"checked-{{ task?.id }}\"\r\n        id=\"checked-{{ task?.id }}\"\r\n      />\r\n      <span class=\"checkbox-custom\" (click)=\"onArchive(task.id)\"></span>\r\n    </label>\r\n    <label\r\n      [attr.aria-label]=\"task.title + ''\"\r\n      for=\"title-{{ task?.id }}\"\r\n      class=\"title\"\r\n    >\r\n      <input\r\n        type=\"text\"\r\n        [value]=\"task.title\"\r\n        readonly=\"true\"\r\n        id=\"title-{{ task?.id }}\"\r\n        name=\"title-{{ task?.id }}\"\r\n        placeholder=\"Input title\"\r\n      />\r\n    </label>\r\n    <button\r\n      *ngIf=\"task?.state !== 'TASK_ARCHIVED'\"\r\n      class=\"pin-button\"\r\n      [attr.aria-label]=\"'pinTask-' + task.id\"\r\n      (click)=\"onPin(task.id)\"\r\n    >\r\n      <span class=\"icon-star\"></span>\r\n    </button>\r\n  </div>\r\n  \r\n  <markdown \r\n  mermaid\r\n  ngPreserveWhitespaces >\r\n  <pre class=\"mermaid\"> \r\n  \r\n  \r\n      graph TD;\r\n      id1([1.Select an editor])-->id2([stackblitz]);\r\n      id1-->id3([vs code ]);\r\n      id3-->id4\r\n      id2-->id4([Select a blank Nodejs project]);\r\n      id4-->id5([import  a Blank repository ])\r\n      id5-->id6([\"Run, npm install  @angular/cli\"])\r\n      id6-->id7([\"Run, ng new project-name\"])\r\n      id7-->id8([\"Installing Storybook using npx storybook@latest init \"])\r\n      \r\n  \r\n  \r\n  </pre> \r\n  \r\n  </markdown>"
         }
     ],
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-8907523e2e175cf36b45bb04950f2524f585bfd35edb247f30629f219daf9723f50f6a91b23f9798941eccac91b2b68f623a071ec44a66fd9140f3925badd526",
+            "id": "module-AppModule-bf1d54c27e8a05831d4827057c8d3614c8d632ac04ba49a3de6aaf37e76c604ea68741ddce5a761d6728c2c9c618c778f28fefe286fd0344da0cec3debff8c5e",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { MarkdownModule, MarkdownService } from 'ngx-markdown';\r\nimport { HttpClient } from '@angular/common/http';\r\nimport { HttpClientModule } from '@angular/common/http';\r\n\r\nimport { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppRoutingModule } from './app-routing.module';\r\nimport { AppComponent } from './app.component';\r\nimport { TaskComponent } from './components/task.component';\r\n\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent,\r\n    TaskComponent,\r\n  ],\r\n  exports: [],\r\n  imports: [\r\n    BrowserModule,\r\n    AppRoutingModule,\r\n    HttpClientModule,\r\n    MarkdownModule.forRoot({ loader: HttpClient }),\r\n\r\n    \r\n  ],\r\n\r\n  bootstrap: [AppComponent]\r\n})\r\nexport class AppModule { }\r\n",
+            "sourceCode": "import { MarkdownModule, MarkdownService } from 'ngx-markdown';\r\nimport { HttpClient } from '@angular/common/http';\r\nimport { HttpClientModule } from '@angular/common/http';\r\n\r\nimport { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppRoutingModule } from './app-routing.module';\r\nimport { AppComponent } from './app.component';\r\nimport { TaskComponent } from './components/task.component';\r\nimport { IntroComponent } from './components/intro.component';\r\n\r\n\r\n\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent,\r\n    TaskComponent,\r\n    IntroComponent\r\n  ],\r\n  exports: [],\r\n  imports: [\r\n    BrowserModule,\r\n    AppRoutingModule,\r\n    HttpClientModule,\r\n    MarkdownModule.forRoot({ loader: HttpClient }),\r\n\r\n    \r\n  ],\r\n\r\n  bootstrap: [AppComponent]\r\n})\r\nexport class AppModule { }\r\n",
             "children": [
                 {
                     "type": "providers",
@@ -426,6 +461,9 @@
                     "elements": [
                         {
                             "name": "AppComponent"
+                        },
+                        {
+                            "name": "IntroComponent"
                         },
                         {
                             "name": "TaskComponent"
@@ -515,13 +553,33 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n    args : {\r\n\r\n      task:\r\n        {\r\n          ...Default.args?.task,\r\n          state: 'TASK_ARCHIVED'\r\n        }\r\n\r\n      \r\n      \r\n    }\r\n  }"
+                "defaultValue": "{\r\n\r\n  }"
             },
             {
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/components/task.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n\r\n  }"
+            },
+            {
+                "name": "introDefault",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/intro.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n    args : {\r\n      task: {\r\n        id: '1',\r\n        title: 'Test Task',\r\n        state: 'TASK_INBOX',\r\n      },\r\n    }\r\n  }"
+            },
+            {
+                "name": "introDefaultNew",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/intro.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -611,11 +669,21 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/components/intro.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<IntroComponent>",
+                "defaultValue": "{\r\n    /* 👇 The title prop is optional.\r\n     * See https://storybook.js.org/docs/angular/configure/overview#configure-story-loading\r\n     * to learn how to generate automatic titles\r\n     */\r\n    title: 'TaskBox/Private',\r\n    component: IntroComponent,\r\n    includeStories:['introDefaultNew','introDefault'],\r\n    decorators: [\r\n      moduleMetadata({\r\n        declarations: [IntroComponent],\r\n        imports: [\r\n          HttpClientModule,\r\n      MarkdownModule.forRoot({ loader: HttpClient }),\r\n  \r\n        ]\r\n         })\r\n    ],\r\n\r\n  \r\n    \r\n  }"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/components/task.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<TaskComponent>",
-                "defaultValue": "{\r\n    /* 👇 The title prop is optional.\r\n     * See https://storybook.js.org/docs/angular/configure/overview#configure-story-loading\r\n     * to learn how to generate automatic titles\r\n     */\r\n    title: 'TaskBox/TaskComponent',\r\n    component: TaskComponent,\r\n    decorators: [\r\n      moduleMetadata({\r\n        declarations: [TaskComponent],\r\n        imports: [\r\n          HttpClientModule,\r\n      MarkdownModule.forRoot({ loader: HttpClient }),\r\n  \r\n        ]\r\n         })\r\n    ]\r\n    \r\n  }"
+                "defaultValue": "{\r\n\r\n    title: 'TaskBox/TaskComponent',\r\n    component: TaskComponent,\r\n    decorators: [\r\n      moduleMetadata({\r\n        declarations: [TaskComponent],\r\n        imports: [\r\n          HttpClientModule,\r\n      MarkdownModule.forRoot({ loader: HttpClient }),\r\n  \r\n        ]\r\n         })\r\n    ]\r\n    \r\n  }"
             },
             {
                 "name": "Pinned",
@@ -635,7 +703,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Preview",
-                "defaultValue": "{\r\n  parameters: {\r\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\r\n    controls: {\r\n      matchers: {\r\n        color: /(background|color)$/i,\r\n        date: /Date$/,\r\n      },\r\n    },\r\n  },\r\n}"
+                "defaultValue": "{\r\n  parameters: {\r\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\r\n    controls: {\r\n      matchers: {\r\n        color: /(background|color)$/i,\r\n        date: /Date$/,\r\n      },\r\n    },\r\n    options: {\r\n      storySort: {     \r\n        order: [\r\n          'TaskBox',\r\n          ['TaskComponent','Private']\r\n          \r\n        ],\r\n      },\r\n    },\r\n  },\r\n}"
             },
             {
                 "name": "Primary",
@@ -707,6 +775,17 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
+                "rawtype": "StoryObj<IntroComponent>",
+                "file": "src/app/components/intro.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 177
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
                 "rawtype": "StoryObj<TaskComponent>",
                 "file": "src/app/components/task.stories.ts",
                 "deprecated": false,
@@ -736,7 +815,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n    args : {\r\n\r\n      task:\r\n        {\r\n          ...Default.args?.task,\r\n          state: 'TASK_ARCHIVED'\r\n        }\r\n\r\n      \r\n      \r\n    }\r\n  }"
+                    "defaultValue": "{\r\n\r\n  }"
                 },
                 {
                     "name": "Default",
@@ -746,7 +825,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n    args : {\r\n      task: {\r\n        id: '1',\r\n        title: 'Test Task',\r\n        state: 'TASK_INBOX',\r\n      },\r\n    }\r\n  }"
+                    "defaultValue": "{\r\n\r\n  }"
                 },
                 {
                     "name": "meta",
@@ -756,7 +835,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<TaskComponent>",
-                    "defaultValue": "{\r\n    /* 👇 The title prop is optional.\r\n     * See https://storybook.js.org/docs/angular/configure/overview#configure-story-loading\r\n     * to learn how to generate automatic titles\r\n     */\r\n    title: 'TaskBox/TaskComponent',\r\n    component: TaskComponent,\r\n    decorators: [\r\n      moduleMetadata({\r\n        declarations: [TaskComponent],\r\n        imports: [\r\n          HttpClientModule,\r\n      MarkdownModule.forRoot({ loader: HttpClient }),\r\n  \r\n        ]\r\n         })\r\n    ]\r\n    \r\n  }"
+                    "defaultValue": "{\r\n\r\n    title: 'TaskBox/TaskComponent',\r\n    component: TaskComponent,\r\n    decorators: [\r\n      moduleMetadata({\r\n        declarations: [TaskComponent],\r\n        imports: [\r\n          HttpClientModule,\r\n      MarkdownModule.forRoot({ loader: HttpClient }),\r\n  \r\n        ]\r\n         })\r\n    ]\r\n    \r\n  }"
                 },
                 {
                     "name": "Pinned",
@@ -767,6 +846,38 @@
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\r\n    args : {  \r\n      task:\r\n        {\r\n          id: '2',\r\n          title: 'Test Task',\r\n          state: 'TASK_INBOX',\r\n        }\r\n\r\n      \r\n\r\n    }\r\n  }"
+                }
+            ],
+            "src/app/components/intro.stories.ts": [
+                {
+                    "name": "introDefault",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/intro.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n    args : {\r\n      task: {\r\n        id: '1',\r\n        title: 'Test Task',\r\n        state: 'TASK_INBOX',\r\n      },\r\n    }\r\n  }"
+                },
+                {
+                    "name": "introDefaultNew",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/intro.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n    args : {\r\n      task: {\r\n        id: '1',\r\n        title: 'Test Task',\r\n        state: 'TASK_INBOX',\r\n      },\r\n    }\r\n  }"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/intro.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<IntroComponent>",
+                    "defaultValue": "{\r\n    /* 👇 The title prop is optional.\r\n     * See https://storybook.js.org/docs/angular/configure/overview#configure-story-loading\r\n     * to learn how to generate automatic titles\r\n     */\r\n    title: 'TaskBox/Private',\r\n    component: IntroComponent,\r\n    includeStories:['introDefaultNew','introDefault'],\r\n    decorators: [\r\n      moduleMetadata({\r\n        declarations: [IntroComponent],\r\n        imports: [\r\n          HttpClientModule,\r\n      MarkdownModule.forRoot({ loader: HttpClient }),\r\n  \r\n        ]\r\n         })\r\n    ],\r\n\r\n  \r\n    \r\n  }"
                 }
             ],
             "src/stories/Button.stories.ts": [
@@ -894,7 +1005,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Preview",
-                    "defaultValue": "{\r\n  parameters: {\r\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\r\n    controls: {\r\n      matchers: {\r\n        color: /(background|color)$/i,\r\n        date: /Date$/,\r\n      },\r\n    },\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  parameters: {\r\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\r\n    controls: {\r\n      matchers: {\r\n        color: /(background|color)$/i,\r\n        date: /Date$/,\r\n      },\r\n    },\r\n    options: {\r\n      storySort: {     \r\n        order: [\r\n          'TaskBox',\r\n          ['TaskComponent','Private']\r\n          \r\n        ],\r\n      },\r\n    },\r\n  },\r\n}"
                 }
             ]
         },
@@ -934,6 +1045,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<Page>",
                     "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 177
+                }
+            ],
+            "src/app/components/intro.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<IntroComponent>",
+                    "file": "src/app/components/intro.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -990,6 +1114,45 @@
                 "name": "AppComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/intro.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IntroComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/intro.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "introDefault",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/intro.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "introDefaultNew",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/intro.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {

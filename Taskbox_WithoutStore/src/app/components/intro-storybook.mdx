@@ -1,0 +1,259 @@
+{/* intro-storybook.mdx */}
+
+import { Canvas, Meta, Story } from "@storybook/blocks";
+
+import * as Intro from "./intro.stories";
+
+<Meta of={Intro} name="Intro To Storybook" />
+
+# Intro to Storybook Taskbox App
+
+---
+
+The following is an introduction to creating a Storybook for an Angular application called Taskbox. We will begin by creating the initial story.
+
+<Story of={Intro.introDefault} />
+```typescript import {(Component, Input, Output, EventEmitter)} from "@angular/core";
+
+@Component({
+selector: "app-task",
+template: `    <div class="list-item">
+      <label [attr.aria-label]="task.title + ''" for="title">
+        <input
+          type="text"
+          [value]="task.title"
+          readonly="true"
+          id="title"
+          name="title"
+        />
+      </label>
+    </div>
+ `,
+})
+export class TaskComponent {
+@Input() task: any;
+
+// tslint:disable-next-line: no-output-on-prefix
+@Output()
+onPinTask = new EventEmitter<Event>();
+
+// tslint:disable-next-line: no-output-on-prefix
+@Output()
+onArchiveTask = new EventEmitter<Event>();
+}
+
+````
+
+now create the stories file in "src/app/components/task.stories.ts"
+
+```typescript
+import type { Meta, StoryObj } from "@storybook/angular/";
+
+import { TaskComponent } from "./task.component";
+import { action } from "@storybook/addon-actions";
+
+const meta: Meta<TaskComponent> = {
+  title: "TaskComponent",
+  component: TaskComponent,
+};
+
+export default meta;
+type Story = StoryObj<TaskComponent>;
+
+const actionsData = {
+  onPinTask: action("onPinTask"),
+  onArchiveTask: action("onArchiveTask"),
+};
+
+export const DefaultTask: Story = {
+  args: {
+    task: {
+      id: "1",
+      title: "Test Task",
+      state: "TASK_INBOX",
+    },
+  },
+};
+
+export const Pinned: Story = {
+  render: () => ({
+    props: {
+      task: {
+        id: "1",
+        title: "Test Task",
+        state: "TASK_PINNED",
+      },
+      onPinTask: actionsData.onPinTask,
+      onArchiveTask: actionsData.onArchiveTask,
+    },
+  }),
+};
+
+export const Archived: Story = {
+  render: () => ({
+    props: {
+      task: {
+        id: "1",
+        title: "Test Task",
+        state: "TASK_ARCHIVED",
+      },
+      onPinTask: actionsData.onPinTask,
+      onArchiveTask: actionsData.onArchiveTask,
+    },
+  }),
+};
+````
+
+Storybook has two main levels of organization: components and their child stories. Each story is a variation of a component. You can create multiple stories for each component as needed
+
+- ##### Component
+- Story
+- Story
+
+To tell Storybook about the component we are documenting, we create a default export that contains:
+
+- component--the component itself
+- title--how to refer to the component in the sidebar of the Storybook app
+- excludeStories--exports in the story file that should not be rendered as stories by Storybook.
+
+To define our stories, we export a function for each of our test states to generate a story. The story is a function that returns a rendered element (i.e., a component class with a set of props) in a given state---exactly like a Functional Component.
+
+As we have multiple permutations of our component, assigning it to a Template variable is convenient. Introducing this pattern in your stories will reduce the amount of code you need to write and maintain.
+
+Arguments, or args for short, allow us to live-edit our components with the controls addon without restarting Storybook. Once an args value changes, so does the component.
+
+When creating a story, we use a base task arg to build out the shape of the task the component expects, typically modeled from what the actual data looks like.
+
+action() allows us to create a callback that appears in the actions panel of the Storybook UI when clicked. So when we build a pin button, we’ll be able to determine if a button click is successful in the UI.
+
+As we need to pass the same set of actions to all permutations of our component, it is convenient to bundle them up into a single actionsData variable and pass them into our story definition each time.
+
+Another nice thing about bundling the actionsData that a component needs is that you can export them and use them in stories for components that reuse this component, as we'll see later.
+
+### Config
+
+To see the new stories we created in Storybook, we need to make a minor adjustment to the Storybook configuration file (.storybook/main.js). Replace the contents of this file with the updated code provided.
+
+```typescript
+module.exports = {
+  stories: ["../src/app/components/**/*.stories.ts"],
+  addons: [
+    "@storybook/addon-links",
+    "@storybook/addon-essentials",
+    "@storybook/addon-interactions",
+  ],
+  framework: "@storybook/angular",
+  core: {
+    builder: "@storybook/builder-webpack5",
+  },
+  features: {
+    interactionsDebugger: true,
+  },
+};
+```
+
+Once we’ve done this, restarting the Storybook server should yield test cases for the three states of TaskComponent:
+
+### Specify data requirements
+
+It's a good idea to define the structure of the data that a component requires. This makes it easier to understand and can prevent issues from occurring. We'll create an interface for the Task model using TypeScript. This will help document the data and identify any potential issues early on.
+
+Create a new directory called models inside the app directory, followed by a new file called task.model.ts:
+
+```typescript
+export interface Task {
+  id: string;
+  title: string;
+  state: string;
+}
+```
+
+### Build out the states
+
+Now that we have Storybook set up, styles imported, and test cases built out, we can quickly start implementing the HTML of the component to match the design.
+
+The component is still rudimentary at the moment. First, write the code that achieves the design without going into too much detail:
+
+```typescript
+import { Component, Input, Output, EventEmitter } from "@angular/core";
+
+import { Task } from "../models/task.model";
+
+@Component({
+  selector: "app-task",
+  template: `
+    <div class="list-item {{ task?.state }}">
+      <label
+        [attr.aria-label]="'archiveTask-' + task.id"
+        for="checked-{{ task?.id }}"
+        class="checkbox"
+      >
+        <input
+          type="checkbox"
+          disabled="true"
+          [defaultChecked]="task?.state === 'TASK_ARCHIVED'"
+          name="checked-{{ task?.id }}"
+          id="checked-{{ task?.id }}"
+        />
+        <span class="checkbox-custom" (click)="onArchive(task.id)"></span>
+      </label>
+      <label
+        [attr.aria-label]="task.title + ''"
+        for="title-{{ task?.id }}"
+        class="title"
+      >
+        <input
+          type="text"
+          [value]="task.title"
+          readonly="true"
+          id="title-{{ task?.id }}"
+          name="title-{{ task?.id }}"
+          placeholder="Input title"
+        />
+      </label>
+      <button
+        *ngIf="task?.state !== 'TASK_ARCHIVED'"
+        class="pin-button"
+        [attr.aria-label]="'pinTask-' + task.id"
+        (click)="onPin(task.id)"
+      >
+        <span class="icon-star"></span>
+      </button>
+    </div>
+  `,
+})
+export class TaskComponent {
+  @Input() task: Task;
+
+  // tslint:disable-next-line: no-output-on-prefix
+  @Output()
+  onPinTask = new EventEmitter<Event>();
+
+  // tslint:disable-next-line: no-output-on-prefix
+  @Output()
+  onArchiveTask = new EventEmitter<Event>();
+
+  /**
+   * Component method to trigger the onPin event
+   * @param id string
+   */
+  onPin(id: any) {
+    this.onPinTask.emit(id);
+  }
+  /**
+   * Component method to trigger the onArchive event
+   * @param id string
+   */
+  onArchive(id: any) {
+    this.onArchiveTask.emit(id);
+  }
+}
+```
+
+The additional markup from above, combined with our existing CSS (see src/styles.css and angular.json for configuration), yields the following UI:
+
+### Component built!
+
+We’ve now successfully built out a component without needing a server or running the entire frontend application. The next step is to build out the remaining Taskbox components one by one in a similar fashion.
+
+As you can see, getting started building components in isolation is easy and fast. We can expect to produce a higher-quality UI with fewer bugs and more polish because it’s possible to dig in and test every possible state.
