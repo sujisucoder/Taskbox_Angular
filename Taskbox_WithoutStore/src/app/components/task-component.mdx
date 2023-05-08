@@ -6,18 +6,11 @@ import * as Task from "./task.stories";
 
 <Meta of={Task} name="task component" />
 
-# TaskBox App
+# Task Component
 
 ---
 
 Let's get started with building an Angular app called Taskbox and use Storybook as a tool to learn about its features gradually. By developing this application, we can gain comprehensive knowledge about Storybook.
+First lets make a task component.
 
-<markdown mermaid ngPreserveWhitespaces>
-  <pre class="mermaid">
-    graph TD; id1([1.Select an editor])-->id2([stackblitz]); id1-->id3([vs code
-    ]); id3-->id4 id2-->id4([Select a blank Nodejs project]); id4-->id5([import
-    a Blank repository ]) id5-->id6(["Run, npm install @angular/cli"])
-    id6-->id7(["Run, ng new project-name"]) id7-->id8(["Installing Storybook
-    using npx storybook@latest init "])
-  </pre>
-</markdown>
+<Story of={Task.Pinned} />
