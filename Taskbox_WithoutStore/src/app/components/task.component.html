@@ -1,4 +1,21 @@
-<div class="list-item {{ task?.state }}">
+<markdown 
+mermaid
+ngPreserveWhitespaces >
+<pre class="mermaid"> 
+
+    graph TD;
+    id1([1.Task component])-->id2([ create task component file]);
+ 
+
+    id4-->id5([create a story for the component]);
+
+
+
+</pre> 
+
+</markdown>
+
+<!-- <div class="list-item {{ task?.state }}">
     <label
       [attr.aria-label]="'archiveTask-' + task.id"
       for="checked-{{ task?.id }}"
@@ -38,5 +55,4 @@
   </div>
 
 
-
-  
+ -->

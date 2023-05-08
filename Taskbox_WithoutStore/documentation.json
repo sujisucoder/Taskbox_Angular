@@ -69,7 +69,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<app-task-details></app-task-details>\r\n<app-task></app-task> "
+            "templateData": "<app-task></app-task> "
         },
         {
             "name": "ButtonComponent",
@@ -299,7 +299,7 @@
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
-            "templateData": "<markdown \r\nmermaid\r\nngPreserveWhitespaces >\r\n<pre class=\"mermaid\"> \r\n\r\n\r\n    graph TD;\r\n    id1([1.Select an editor])-->id2([stackblitz]);\r\n    id1-->id3([vs code ]);\r\n    id3-->id4\r\n    id2-->id4([Select a blank Nodejs project]);\r\n    id4-->id5([import  a Blank repository ])\r\n    id5-->id6([\"Run, npm install  @angular/cli\"])\r\n    id6-->id7([\"Run, ng new project-name\"])\r\n    id7-->id8([\"Installing Storybook using npx storybook@latest init \"])\r\n    \r\n\r\n\r\n</pre> \r\n\r\n</markdown>"
+            "templateData": "<markdown \r\nmermaid\r\nngPreserveWhitespaces >\r\n<pre class=\"mermaid\"> \r\n\r\n    graph TD;\r\n    id1([1.Select an editor])-->id2([stackblitz]);\r\n    id1-->id3([vs code ]);\r\n    id3-->id4\r\n    id2-->id4([Select a blank Nodejs project]);\r\n    id4-->id5([import  a Blank repository ])\r\n    id5-->id6([\"Run, npm install  @angular/cli\"])\r\n    id6-->id7([\"Run, ng new project-name\"])\r\n    id7-->id8([\"Installing Storybook using npx storybook@latest init \"])\r\n\r\n</pre> \r\n\r\n</markdown>"
         },
         {
             "name": "PageComponent",
@@ -438,7 +438,7 @@
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
-            "templateData": "<div class=\"list-item {{ task?.state }}\">\r\n    <label\r\n      [attr.aria-label]=\"'archiveTask-' + task.id\"\r\n      for=\"checked-{{ task?.id }}\"\r\n      class=\"checkbox\"\r\n    >\r\n      <input\r\n        type=\"checkbox\"\r\n        disabled=\"true\"\r\n        [defaultChecked]=\"task?.state === 'TASK_ARCHIVED'\"\r\n        name=\"checked-{{ task?.id }}\"\r\n        id=\"checked-{{ task?.id }}\"\r\n      />\r\n      <span class=\"checkbox-custom\" (click)=\"onArchive(task.id)\"></span>\r\n    </label>\r\n    <label\r\n      [attr.aria-label]=\"task.title + ''\"\r\n      for=\"title-{{ task?.id }}\"\r\n      class=\"title\"\r\n    >\r\n      <input\r\n        type=\"text\"\r\n        [value]=\"task.title\"\r\n        readonly=\"true\"\r\n        id=\"title-{{ task?.id }}\"\r\n        name=\"title-{{ task?.id }}\"\r\n        placeholder=\"Input title\"\r\n      />\r\n    </label>\r\n    <button\r\n      *ngIf=\"task?.state !== 'TASK_ARCHIVED'\"\r\n      class=\"pin-button\"\r\n      [attr.aria-label]=\"'pinTask-' + task.id\"\r\n      (click)=\"onPin(task.id)\"\r\n    >\r\n      <span class=\"icon-star\"></span>\r\n    </button>\r\n  </div>\r\n  \r\n  <markdown \r\n  mermaid\r\n  ngPreserveWhitespaces >\r\n  <pre class=\"mermaid\"> \r\n  \r\n  \r\n      graph TD;\r\n      id1([1.Select an editor])-->id2([stackblitz]);\r\n      id1-->id3([vs code ]);\r\n      id3-->id4\r\n      id2-->id4([Select a blank Nodejs project]);\r\n      id4-->id5([import  a Blank repository ])\r\n      id5-->id6([\"Run, npm install  @angular/cli\"])\r\n      id6-->id7([\"Run, ng new project-name\"])\r\n      id7-->id8([\"Installing Storybook using npx storybook@latest init \"])\r\n      \r\n  \r\n  \r\n  </pre> \r\n  \r\n  </markdown>"
+            "templateData": "<markdown \r\nmermaid\r\nngPreserveWhitespaces >\r\n<pre class=\"mermaid\"> \r\n\r\n    graph TD;\r\n    id1([1.Task component])-->id2([ ]);\r\n    id2-->id3([]);\r\n    id3-->id4\r\n    id4-->id5([Select a blank Nodejs project]);\r\n\r\n\r\n\r\n</pre> \r\n\r\n</markdown>\r\n\r\n<!-- <div class=\"list-item {{ task?.state }}\">\r\n    <label\r\n      [attr.aria-label]=\"'archiveTask-' + task.id\"\r\n      for=\"checked-{{ task?.id }}\"\r\n      class=\"checkbox\"\r\n    >\r\n      <input\r\n        type=\"checkbox\"\r\n        disabled=\"true\"\r\n        [defaultChecked]=\"task?.state === 'TASK_ARCHIVED'\"\r\n        name=\"checked-{{ task?.id }}\"\r\n        id=\"checked-{{ task?.id }}\"\r\n      />\r\n      <span class=\"checkbox-custom\" ></span>\r\n    </label>\r\n    <label\r\n      [attr.aria-label]=\"task.title + ''\"\r\n      for=\"title-{{ task?.id }}\"\r\n      class=\"title\"\r\n    >\r\n      <input\r\n        type=\"text\"\r\n        [value]=\"task.title\"\r\n        readonly=\"true\"\r\n        id=\"title-{{ task?.id }}\"\r\n        name=\"title-{{ task?.id }}\"\r\n        placeholder=\"Input title\"\r\n      />\r\n    </label>\r\n    <button\r\n      *ngIf=\"task?.state !== 'TASK_ARCHIVED'\"\r\n      class=\"pin-button\"\r\n      [attr.aria-label]=\"'pinTask-' + task.id\"\r\n      \r\n    >\r\n      <span class=\"icon-star\"></span>\r\n    </button>\r\n  </div>\r\n\r\n\r\n -->\r\n"
         }
     ],
     "modules": [
