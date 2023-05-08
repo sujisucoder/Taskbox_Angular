@@ -1,4 +1,4 @@
-info => Cleaning outputDir: C:\\Users\\binge\\AppData\\Local\\Temp\\chromatic--17004-N8lLsU2dARFR
+info => Cleaning outputDir: C:\\Users\\binge\\AppData\\Local\\Temp\\chromatic--17120-WphDsajc458F
 
                                                                         
                                                                         
@@ -22,135 +22,144 @@ Node.js version : v16.14.2
 
 Operating system : Windows 10
 
-[15:59:19] No configuration file found, switching to CLI flags.
-[15:59:19] Using tsconfig file : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\.storybook\tsconfig.json
-[15:59:19] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\.storybook\preview.ts
-[15:59:19] Excluding      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\.storybook\main.ts
-[15:59:19] Ignoring       : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\.storybook\typings.d.ts
-[15:59:19] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\main.ts
-[15:59:19] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\app\app-routing.module.ts
-[15:59:19] Ignoring       : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\app\app.component.spec.ts
-[15:59:19] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\app\app.component.ts
-[15:59:19] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\app\app.module.ts
-[15:59:19] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\stories\button.component.ts
-[15:59:19] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\stories\Button.stories.ts
-[15:59:19] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\stories\header.component.ts
-[15:59:19] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\stories\Header.stories.ts
-[15:59:19] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\stories\page.component.ts
-[15:59:19] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\stories\Page.stories.ts
-[15:59:19] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\stories\User.ts
-[15:59:19] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\app\components\intro.stories.ts
-[15:59:19] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\app\components\intro.component.ts
-[15:59:19] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\app\components\task.component.ts
-[15:59:19] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\app\components\task.stories.ts
-[15:59:19] Searching package.json file
-[15:59:19] package.json file found
-[15:59:19] Processing package.json dependencies
-[15:59:19] Searching README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md, TODO.md files
-[15:59:19] README.md file found
-[15:59:19] Error during D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\CHANGELOG read
-[15:59:19] Continuing without CHANGELOG.md file
-[15:59:19] Error during D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\CONTRIBUTING read
-[15:59:19] Continuing without CONTRIBUTING.md file
-[15:59:19] Error during D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\LICENSE read
-[15:59:19] Continuing without LICENSE.md file
-[15:59:19] Error during D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\TODO read
-[15:59:19] Continuing without TODO.md file
-[15:59:19] Get dependencies data
-[15:59:19] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/.storybook/preview.ts
-[15:59:19] found          : preview
-[15:59:19] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/main.ts
-[15:59:19] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/app/app-routing.module.ts
-[15:59:19] Analysing routes definitions and clean them if necessary
-[15:59:19] found          : AppRoutingModule
-[15:59:19]                : - imports:
-[15:59:19]                : 	- RouterModule
-[15:59:19]                : - exports:
-[15:59:19]                : 	- RouterModule
-[15:59:19] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/app/app.component.ts
-[15:59:19] found          : AppComponent
-[15:59:19] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/app/app.module.ts
-[15:59:19] found          : AppModule
-[15:59:19]                : - imports:
-[15:59:19]                : 	- BrowserModule
-[15:59:19]                : 	- AppRoutingModule
-[15:59:19]                : 	- HttpClientModule
-[15:59:19]                : 	- MarkdownModule
-[15:59:19]                : - declarations:
-[15:59:19]                : 	- AppComponent
-[15:59:19]                : 	- TaskComponent
-[15:59:19]                : 	- IntroComponent
-[15:59:19]                : - bootstrap:
-[15:59:19]                : 	- AppComponent
-[15:59:19] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/stories/button.component.ts
-[15:59:19] found          : ButtonComponent
-[15:59:19] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/stories/Button.stories.ts
-[15:59:19] found          : meta
-[15:59:19] found          : Story
-[15:59:19] found          : Primary
-[15:59:19] found          : Secondary
-[15:59:19] found          : Large
-[15:59:19] found          : Small
-[15:59:19] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/stories/header.component.ts
-[15:59:19] found          : HeaderComponent
-[15:59:19] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/stories/Header.stories.ts
-[15:59:19] found          : meta
-[15:59:19] found          : Story
-[15:59:19] found          : LoggedIn
-[15:59:19] found          : LoggedOut
-[15:59:19] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/stories/page.component.ts
-[15:59:19] found          : PageComponent
-[15:59:19] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/stories/Page.stories.ts
-[15:59:19] found          : meta
-[15:59:19] found          : Story
-[15:59:19] found          : LoggedOut
-[15:59:19] found          : LoggedIn
-[15:59:19] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/stories/User.ts
-[15:59:19] found          : User
-[15:59:19] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/app/components/intro.stories.ts
-[15:59:19] found          : meta
-[15:59:19] found          : Story
-[15:59:19] found          : introDefault
-[15:59:19] found          : introDefaultNew
-[15:59:19] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/app/components/intro.component.ts
-[15:59:19] found          : IntroComponent
-[15:59:19] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/app/components/task.component.ts
-[15:59:19] found          : TaskComponent
-[15:59:19] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/app/components/task.stories.ts
-[15:59:19] found          : meta
-[15:59:19] found          : actionsData
-[15:59:19] found          : Story
-[15:59:19] found          : Default
-[15:59:19] found          : Pinned
-[15:59:19] found          : Archived
-[15:59:19] -------------------
-[15:59:19] Project statistics 
-[15:59:19] - files      : 17
-[15:59:19] - module     : 2
-[15:59:19] - component  : 6
-[15:59:19] - interface  : 1
-[15:59:19] -------------------
-[15:59:19] Prepare components
-[15:59:19]  AppComponent has a templateUrl, include it
-[15:59:19]  AppComponent has styleUrls, include them
-[15:59:19]  ButtonComponent has styleUrls, include them
-[15:59:19]  HeaderComponent has styleUrls, include them
-[15:59:19]  IntroComponent has a templateUrl, include it
-[15:59:19]  PageComponent has styleUrls, include them
-[15:59:19]  TaskComponent has a templateUrl, include it
-[15:59:19] Prepare modules
-[15:59:19] Process routes
-[15:59:19] Prepare interfaces
-[15:59:19] Prepare miscellaneous
-[15:59:19] Process documentation coverage report
-[15:59:19] Generating documentation in export format json
-[15:59:19] Documentation generated in ./ in 0.52 seconds
+[15:22:09] No configuration file found, switching to CLI flags.
+[15:22:09] Using tsconfig file : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\.storybook\tsconfig.json
+[15:22:09] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\.storybook\preview.ts
+[15:22:09] Excluding      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\.storybook\main.ts
+[15:22:09] Ignoring       : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\.storybook\typings.d.ts
+[15:22:09] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\main.ts
+[15:22:09] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\app\app-routing.module.ts
+[15:22:09] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\app\app.component.ts
+[15:22:09] Ignoring       : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\app\app.component.spec.ts
+[15:22:09] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\app\app.module.ts
+[15:22:09] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\environments\environment.development.ts
+[15:22:09] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\environments\environment.ts
+[15:22:09] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\stories\button.component.ts
+[15:22:09] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\stories\header.component.ts
+[15:22:09] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\stories\Button.stories.ts
+[15:22:09] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\stories\Header.stories.ts
+[15:22:09] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\stories\page.component.ts
+[15:22:09] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\stories\Page.stories.ts
+[15:22:09] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\stories\User.ts
+[15:22:09] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\app\components\intro.component.ts
+[15:22:09] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\app\components\intro.stories.ts
+[15:22:09] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\app\components\task.stories.ts
+[15:22:09] Including      : D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\src\app\components\task.component.ts
+[15:22:09] Searching package.json file
+[15:22:09] package.json file found
+[15:22:09] Processing package.json dependencies
+[15:22:09] Searching README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md, TODO.md files
+[15:22:09] README.md file found
+[15:22:09] Error during D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\CHANGELOG read
+[15:22:09] Continuing without CHANGELOG.md file
+[15:22:09] Error during D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\CONTRIBUTING read
+[15:22:09] Continuing without CONTRIBUTING.md file
+[15:22:09] Error during D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\LICENSE read
+[15:22:09] Continuing without LICENSE.md file
+[15:22:09] Error during D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\TODO read
+[15:22:09] Continuing without TODO.md file
+[15:22:09] Get dependencies data
+[15:22:09] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/.storybook/preview.ts
+[15:22:09] found          : preview
+[15:22:09] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/main.ts
+[15:22:09] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/app/app-routing.module.ts
+[15:22:09] Analysing routes definitions and clean them if necessary
+[15:22:09] found          : AppRoutingModule
+[15:22:09]                : - imports:
+[15:22:09]                : 	- RouterModule
+[15:22:09]                : - exports:
+[15:22:09]                : 	- RouterModule
+[15:22:09] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/app/app.component.ts
+[15:22:09] found          : AppComponent
+[15:22:09] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/app/app.module.ts
+[15:22:09] found          : AppModule
+[15:22:09]                : - imports:
+[15:22:09]                : 	- BrowserModule
+[15:22:09]                : 	- AppRoutingModule
+[15:22:09]                : 	- HttpClientModule
+[15:22:09]                : 	- MarkdownModule
+[15:22:09]                : 	- provideFirebaseApp(() => initializeApp(environment
+[15:22:09]                : 	- provideAuth(() => getAuth())
+[15:22:09]                : 	- provideFirestore(() => getFirestore())
+[15:22:09]                : - declarations:
+[15:22:09]                : 	- AppComponent
+[15:22:09]                : 	- TaskComponent
+[15:22:09]                : 	- IntroComponent
+[15:22:09]                : - bootstrap:
+[15:22:09]                : 	- AppComponent
+[15:22:09] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/environments/environment.development.ts
+[15:22:09] found          : environment
+[15:22:09] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/environments/environment.ts
+[15:22:09] found          : environment
+[15:22:09] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/stories/button.component.ts
+[15:22:09] found          : ButtonComponent
+[15:22:09] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/stories/header.component.ts
+[15:22:09] found          : HeaderComponent
+[15:22:09] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/stories/Button.stories.ts
+[15:22:09] found          : meta
+[15:22:09] found          : Story
+[15:22:09] found          : Primary
+[15:22:09] found          : Secondary
+[15:22:09] found          : Large
+[15:22:09] found          : Small
+[15:22:09] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/stories/Header.stories.ts
+[15:22:09] found          : meta
+[15:22:09] found          : Story
+[15:22:09] found          : LoggedIn
+[15:22:09] found          : LoggedOut
+[15:22:09] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/stories/page.component.ts
+[15:22:09] found          : PageComponent
+[15:22:09] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/stories/Page.stories.ts
+[15:22:09] found          : meta
+[15:22:09] found          : Story
+[15:22:09] found          : LoggedOut
+[15:22:09] found          : LoggedIn
+[15:22:09] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/stories/User.ts
+[15:22:09] found          : User
+[15:22:09] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/app/components/intro.component.ts
+[15:22:09] found          : IntroComponent
+[15:22:09] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/app/components/intro.stories.ts
+[15:22:09] found          : meta
+[15:22:09] found          : Story
+[15:22:09] found          : introDefault
+[15:22:09] found          : introDefaultNew
+[15:22:09] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/app/components/task.stories.ts
+[15:22:09] found          : meta
+[15:22:09] found          : actionsData
+[15:22:09] found          : Story
+[15:22:09] found          : Default
+[15:22:09] found          : Pinned
+[15:22:09] found          : Archived
+[15:22:09] parsing        : D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/app/components/task.component.ts
+[15:22:09] found          : TaskComponent
+[15:22:09] -------------------
+[15:22:09] Project statistics 
+[15:22:09] - files      : 19
+[15:22:09] - module     : 2
+[15:22:09] - component  : 6
+[15:22:09] - interface  : 1
+[15:22:09] -------------------
+[15:22:09] Prepare components
+[15:22:09]  AppComponent has a templateUrl, include it
+[15:22:09]  AppComponent has styleUrls, include them
+[15:22:09]  ButtonComponent has styleUrls, include them
+[15:22:09]  HeaderComponent has styleUrls, include them
+[15:22:09]  IntroComponent has a templateUrl, include it
+[15:22:09]  PageComponent has styleUrls, include them
+[15:22:09]  TaskComponent has a templateUrl, include it
+[15:22:09] Prepare modules
+[15:22:09] Process routes
+[15:22:09] Prepare interfaces
+[15:22:09] Prepare miscellaneous
+[15:22:09] Process documentation coverage report
+[15:22:09] Generating documentation in export format json
+[15:22:09] Documentation generated in ./ in 0.789 seconds
 
 info => Loading presets
 info => Building manager..
-info => Manager built (232 ms)
+info => Manager built (857 ms)
 info => Compiling preview..
-info => Copying static files: D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\node_modules\@storybook\manager\static at C:\Users\binge\AppData\Local\Temp\chromatic--17004-N8lLsU2dARFR\sb-common-assets
+info => Copying static files: D:\Angular_App\Taskbox_Angular\Taskbox_WithoutStore\node_modules\@storybook\manager\static at C:\Users\binge\AppData\Local\Temp\chromatic--17120-WphDsajc458F\sb-common-assets
 info Addon-docs: using MDX2
 info => Using implicit CSS loaders
 info => Using angular browser target options from "Taskbox_WithoutStore:build"
@@ -271,22 +280,25 @@ info => Using default Webpack5 setup
 <s> [webpack.Progress] 10% building import loader ./node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js
 <s> [webpack.Progress] 10% building import loader ./node_modules/babel-loader/lib/index.js
 <s> [webpack.Progress] 10% building 0/3 entries 3/4 dependencies 0/3 modules
-<s> [webpack.Progress] 28% building 1/3 entries 6/6 dependencies 1/6 modules
+<s> [webpack.Progress] 28% building 1/3 entries 13/25 dependencies 7/11 modules
 <s> [webpack.Progress] 38% building 2/3 entries 13/25 dependencies 9/11 modules
 <s> [webpack.Progress] 46% building import loader ./node_modules/@ngtools/webpack/src/ivy/index.js
 <s> [webpack.Progress] 46% building 2/3 entries 26/28 dependencies 9/24 modules
 <s> [webpack.Progress] 46% building import loader ./node_modules/@storybook/mdx2-csf/loader.js
-<s> [webpack.Progress] 46% building 2/3 entries 43/64 dependencies 10/39 modules
+<s> [webpack.Progress] 46% building 2/3 entries 46/70 dependencies 12/40 modules
 <s> [webpack.Progress] 46% building import loader ./node_modules/unplugin/dist/webpack/loaders/load.js
-<s> [webpack.Progress] 46% building 2/3 entries 68/99 dependencies 14/46 modules
-<s> [webpack.Progress] 46% building 2/3 entries 178/209 dependencies 45/100 modules
-<s> [webpack.Progress] 46% building 2/3 entries 278/300 dependencies 61/126 modules
-<s> [webpack.Progress] 46% building 2/3 entries 896/908 dependencies 76/500 modules
-<s> [webpack.Progress] 46% building 2/3 entries 1246/1300 dependencies 100/615 modules
-<s> [webpack.Progress] 46% building 2/3 entries 1771/1800 dependencies 133/652 modules
-<s> [webpack.Progress] 46% building 2/3 entries 2366/2400 dependencies 297/769 modules
-<s> [webpack.Progress] 52% building 2/3 entries 2880/2900 dependencies 765/897 modules
-<s> [webpack.Progress] 61% building 2/3 entries 3138/3163 dependencies 1000/1072 modules
+<s> [webpack.Progress] 46% building 2/3 entries 68/99 dependencies 15/46 modules
+<s> [webpack.Progress] 46% building 2/3 entries 163/186 dependencies 36/88 modules
+<s> [webpack.Progress] 46% building 2/3 entries 274/300 dependencies 61/126 modules
+<s> [webpack.Progress] 29% building 2/3 entries 319/900 dependencies 63/148 modules
+<s> [webpack.Progress] 46% building 2/3 entries 988/1000 dependencies 66/569 modules
+<s> [webpack.Progress] 46% building 2/3 entries 1292/1400 dependencies 80/594 modules
+<s> [webpack.Progress] 46% building 2/3 entries 1683/1800 dependencies 116/655 modules
+<s> [webpack.Progress] 46% building 2/3 entries 2100/2150 dependencies 144/678 modules
+<s> [webpack.Progress] 46% building 2/3 entries 2385/2388 dependencies 300/772 modules
+<s> [webpack.Progress] 46% building 2/3 entries 2761/2800 dependencies 662/853 modules
+<s> [webpack.Progress] 52% building 2/3 entries 3089/3100 dependencies 809/1057 modules
+<s> [webpack.Progress] 61% building 2/3 entries 3295/3300 dependencies 1057/1124 modules
 <s> [webpack.Progress] 65% building 3/3 entries 3343/3343 dependencies 1132/1132 modules
 <s> [webpack.Progress] 65% building
 <s> [webpack.Progress] 69% building finish
@@ -393,20 +405,20 @@ info => Using default Webpack5 setup
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.f7483c2abb99c227064a.css generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.f7483c2abb99c227064a.css generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.cb17726a.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.cb17726a.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.3d98f6e1.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.3d98f6e1.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin app-components-intro-storybook-mdx.7672904c.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin app-components-intro-storybook-mdx.7672904c.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin app-components-task-component-mdx.ec642d89.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin app-components-task-component-mdx.ec642d89.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.a6bcecd3.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.a6bcecd3.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.3ff9213e.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.3ff9213e.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin app-components-intro-storybook-mdx.99cdbe2a.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin app-components-intro-storybook-mdx.99cdbe2a.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin app-components-task-component-mdx.3b043646.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin app-components-task-component-mdx.3b043646.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin stories-Introduction-mdx.b9bfa55c.iframe.bundle.js generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin stories-Introduction-mdx.b9bfa55c.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin app-components-intro-stories.ad259329.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin app-components-intro-stories.ad259329.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin app-components-task-stories.708c6a47.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin app-components-task-stories.708c6a47.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin app-components-intro-stories.05744c52.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin app-components-intro-stories.05744c52.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin app-components-task-stories.395ca365.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin app-components-task-stories.395ca365.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin stories-Button-stories.372b1349.iframe.bundle.js generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin stories-Button-stories.372b1349.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin stories-Header-stories.f49f8868.iframe.bundle.js generate SourceMap
@@ -458,14 +470,14 @@ info => Using default Webpack5 setup
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.44d508151d7f7e6c0fdc.css generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.44d508151d7f7e6c0fdc.css generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.c7d8b92b.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.c7d8b92b.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin runtime~main.21ad0df4.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin runtime~main.21ad0df4.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin app-components-intro-stories.41f8781a.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin app-components-intro-stories.41f8781a.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin app-components-task-stories.55c3d0e0.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin app-components-task-stories.55c3d0e0.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.efa85103.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.efa85103.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin runtime~main.4746d38e.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin runtime~main.4746d38e.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin app-components-intro-stories.e7d96955.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin app-components-intro-stories.e7d96955.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin app-components-task-stories.4bd18588.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin app-components-task-stories.4bd18588.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin stories-Button-stories.2e694be2.iframe.bundle.js generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin stories-Button-stories.2e694be2.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin stories-Header-stories.b285a65f.iframe.bundle.js generate SourceMap
@@ -486,10 +498,10 @@ info => Using default Webpack5 setup
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 921.ef0f7a41.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 568.c43051eb.iframe.bundle.js generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 568.c43051eb.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin app-components-intro-storybook-mdx.d5742aaa.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin app-components-intro-storybook-mdx.d5742aaa.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin app-components-task-component-mdx.f0843fb7.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin app-components-task-component-mdx.f0843fb7.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin app-components-intro-storybook-mdx.695a6549.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin app-components-intro-storybook-mdx.695a6549.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin app-components-task-component-mdx.3d148619.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin app-components-task-component-mdx.3d148619.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin stories-Introduction-mdx.2d74f4f0.iframe.bundle.js generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin stories-Introduction-mdx.2d74f4f0.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 346.3f3bbdf2.iframe.bundle.js generate SourceMap
@@ -523,12 +535,16 @@ info => Using default Webpack5 setup
 <s> [webpack.Progress] 99% cache begin idle
 <s> [webpack.Progress] 100% 
 
-info => Preview built (1.08 min)
+info => Preview built (1.3 min)
 WARN D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/app/app-routing.module.ts is part of the TypeScript compilation but it's unused.
 WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
 WARN D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/app/app.component.ts is part of the TypeScript compilation but it's unused.
 WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
 WARN D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/app/app.module.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/environments/environment.development.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/environments/environment.ts is part of the TypeScript compilation but it's unused.
 WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
 WARN D:/Angular_App/Taskbox_Angular/Taskbox_WithoutStore/src/main.ts is part of the TypeScript compilation but it's unused.
 WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
@@ -542,11 +558,11 @@ WARN   74.b4d19483.iframe.bundle.js (2.03 MiB)
 WARN   296.292230a3.iframe.bundle.js (402 KiB)
 WARN entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
 WARN Entrypoints:
-WARN   main (2.09 MiB)
-WARN       runtime~main.21ad0df4.iframe.bundle.js
+WARN   main (2.12 MiB)
+WARN       runtime~main.4746d38e.iframe.bundle.js
 WARN       74.b4d19483.iframe.bundle.js
 WARN       main.44d508151d7f7e6c0fdc.css
-WARN       main.c7d8b92b.iframe.bundle.js
+WARN       main.efa85103.iframe.bundle.js
 WARN   scripts (2.68 MiB)
 WARN       scripts.785b13378f338693.js
 WARN 
@@ -554,4 +570,4 @@ WARN
 <s> [webpack.Progress] 99% cache shutdown
 <s> [webpack.Progress] 100% 
 
-info => Output directory: C:\\Users\\binge\\AppData\\Local\\Temp\\chromatic--17004-N8lLsU2dARFR
+info => Output directory: C:\\Users\\binge\\AppData\\Local\\Temp\\chromatic--17120-WphDsajc458F

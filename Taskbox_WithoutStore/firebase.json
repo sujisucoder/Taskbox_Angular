@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/Taskbox_WithoutStore",
+    "public": "dist/taskbox-without-store",
     "ignore": [
       "firebase.json",
       "**/.*",
