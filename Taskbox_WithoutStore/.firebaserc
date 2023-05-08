@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "taskbox-c74bb": {
+      "hosting": {
+        "Taskbox_WithoutStore": [
+          "taskbox-c74bb"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "taskbox-c74bb"
+  }
+}

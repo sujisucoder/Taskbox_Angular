@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/Taskbox_WithoutStore",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
