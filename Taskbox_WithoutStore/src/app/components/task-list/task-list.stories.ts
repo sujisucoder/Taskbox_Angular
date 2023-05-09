@@ -5,25 +5,31 @@ import type { Meta, StoryObj } from '@storybook/angular/';
 import { CommonModule } from '@angular/common';
 
 import { TaskListComponent } from './task-list.component';
-import { TaskComponent } from './task.component';
+import { TaskComponent } from '../task/task.component';
 import { action } from '@storybook/addon-actions';
+import { MarkdownModule, MarkdownService } from 'ngx-markdown';
 
-import * as TaskStories from './task.stories';
-import { Task } from '../models/task.model';
+
+import * as TaskStories from '../task/task.stories';
+import { Task } from '../../models/task.model';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 const meta: Meta<TaskListComponent> = {
     /* 👇 The title prop is optional.
      * See https://storybook.js.org/docs/angular/configure/overview#configure-story-loading
      * to learn how to generate automatic titles
      */
-    title: 'TaskListComponent',
+    title: 'TaskBox/TaskListComponent',
     component: TaskListComponent,
-    tags: ['autodocs'],
+    
     decorators: [
         moduleMetadata({
             //👇 Imports both components to allow component composition with Storybook
             declarations: [TaskListComponent, TaskComponent],
-            imports: [CommonModule],
+            imports: [
+              HttpClientModule,
+              MarkdownModule.forRoot({ loader: HttpClient }),
+              CommonModule],
         }),
         //👇 Wraps our stories with a decorator
         // componentWrapperDecorator(story => `<div style="margin: 3em">${story}</div>`),

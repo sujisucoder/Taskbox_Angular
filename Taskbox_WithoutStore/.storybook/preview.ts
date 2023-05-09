@@ -17,7 +17,7 @@ const preview: Preview = {
       storySort: {     
         order: [
           'TaskBox',
-          ['TaskComponent','Private']
+          ['TaskComponent','TaskListComponent','private']
           
         ],
       },

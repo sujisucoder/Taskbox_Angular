@@ -1,0 +1,26 @@
+{/* Checkbox.mdx */}
+
+import { Canvas, Story, Meta } from "@storybook/blocks";
+
+import * as Task from "./task.stories";
+import * as TaskSecond from "./task-second.stories";
+
+<Meta of={Task} />
+
+# Sample
+
+---
+
+This is a sample mdx.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quaerat voluptas repudiandae! Officiis dolorum repellendus aspernatur reprehenderit ex, distinctio, eveniet voluptate assumenda eaque commodi fuga, repudiandae vero provident id modi.
+
+<Story of={Task.Default} />
+
+# Second Sample
+
+---
+
+This is a sample mdx.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quaerat voluptas repudiandae! Officiis dolorum repellendus aspernatur reprehenderit ex, distinctio, eveniet voluptate assumenda eaque commodi fuga, repudiandae vero provident id modi.
+
+##
+
+<Story of={TaskSecond.SecondDefault} />
